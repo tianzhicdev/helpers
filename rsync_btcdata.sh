@@ -18,8 +18,7 @@ sync_directories() {
     # Use rsync to efficiently copy only updated files
     # -a: archive mode (preserves permissions etc)
     # -u: only copy newer files
-    # --delete: remove files in dest that don't exist in source
-    rsync -au --delete "$from_dir/" "$to_dir/"
+    rsync -au "$from_dir/" "$to_dir/"
 
     echo "Directory sync completed from $from_dir to $to_dir"
 }
