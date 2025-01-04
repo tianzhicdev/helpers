@@ -24,4 +24,4 @@ sync_directories() {
     echo "Directory sync completed from $from_dir to $to_dir"
 }
 
-sync_directories "$BTCDIR" "/Volumes/databank/bitcoin_data"
+sync_directories "/Users/tianzhichen/Library/Application Support/Bitcoin/" "/Volumes/databank/bitcoin_data"
